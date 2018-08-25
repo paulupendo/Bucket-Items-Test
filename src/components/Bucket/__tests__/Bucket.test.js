@@ -34,15 +34,15 @@ const props = {
       }
     ],
     BucketId: 1,
-    Description: 'Small Features ',
+    Description: 'Small Features',
     OrderInVertical: 18
   }
 };
 
 describe('Bucket Display test', () => {
-  it('should render cards from props', () => {
-    Component = shallow(<Bucket bucket={props.buckets} />);
-    const cards = Component.find('.card');
-    expect(cards).toHaveLength(2);
+  it('should right title from props', () => {
+    Component = shallow(<Bucket bucket={props.bucket} />);
+    const title = Component.find('.title').at(0);
+    expect(title.text()).toEqual('Small Features');
   });
 });

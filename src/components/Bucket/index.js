@@ -5,7 +5,7 @@ import './Bucket.css';
 
 const Bucket = ({ bucket }) => (
   <div className="bucket">
-    <span designation="title">{bucket.Description}</span>
+    <span className="title">{bucket.Description}</span>
     <div className="cards">
       {bucket.Items.map(item => (
         <Card
