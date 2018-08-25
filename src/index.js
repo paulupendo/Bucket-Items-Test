@@ -6,8 +6,8 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import createStore from './store/createStore';
 
-import './index.css';
 import 'semantic-ui-css/semantic.min.css';
+import './index.css';
 
 const store = createStore();
 const MOUNT_NODE = document.getElementById('root');
