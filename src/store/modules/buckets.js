@@ -27,7 +27,7 @@ const ACTION_HANDLERS = {
 };
 
 const initialState = {
-  buckets: []
+  bucketsList: []
 };
 
 const reducer = (state = initialState, action) => {
